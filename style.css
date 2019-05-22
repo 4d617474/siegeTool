@@ -1,0 +1,148 @@
+:root {
+  --color1:rgba(10,10,15,.2);
+  --color2:#212129;
+	--color2hover:#353540;
+  --color3:#252533;
+	--color3hover:#393950;
+  --color4:rgba(255,255,255,0.05);
+  --color5:rgba(255,255,255,0.03);
+  --color5hover:rgba(255,255,255,0.1);
+	--textShadowColor:rgba(0,0,0,.5);
+	/*#101015*/;
+}
+body
+{
+	font-family: 'Raleway', Arial;
+	text-decoration: none;
+	background-color:#15191e;
+	-moz-user-select: none;
+	user-select:none;
+}
+#siegeTool
+{
+	opacity: 1;
+	animation-name: siegeT;
+	animation-duration: 3s;
+	animation-iteration-count:1;	
+}
+@keyframes siegeT
+{
+	0% { opacity: 0;}
+	90% { opacity: 0;}
+	100% { opacity: 1;}
+}
+#loadingScreen
+{
+	position:fixed;
+	top:calc(50% - 100px);
+	left:calc(50% - 100px);
+	height: 200px;
+	width: 200px;
+	z-index: 1;
+	opacity: 0;
+	background: url("siegeToolLoading.png");
+	background-size: 200px;
+	background-position: center;
+	animation-name: loadingScreen;
+	animation-duration: 1.5s;
+	animation-iteration-count:2;	
+}
+@keyframes loadingScreen
+{
+	0% { opacity: 0;}
+	50% { opacity: 1;}
+	100% { opacity: 0;}
+}
+#background
+{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top:-0%;
+	left:-0%;
+ 	background-image: linear-gradient(to right bottom, #944a87, #944b91, #924c9c, #8d4fa8, #8752b4, #7852b1, #6951ad, #5a50a8, #474992, #38417c, #2c3965, #24304f);
+}
+#operatorSelectBoard
+{
+	z-index: 100;
+	position:absolute;
+	top:calc(50% - 250px);
+	left:calc(50% - 225px);
+	height:calc(550px + 2px);
+	width:calc(450px + 2px);
+	display: block;
+	background-color:var(--color1);
+	box-shadow:0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+	/*overflow: hidden;
+	border-radius:4px;*/
+}
+#buttonRST
+{
+	z-index: 101;
+	position: absolute;
+	bottom:0px;
+	height: 50px;
+	color:white;
+	text-align: center;
+	text-indent: 0px;
+	cursor:pointer;
+	font-size:15px;
+	transition:0.2s;
+	background:var(--color4);
+	box-shadow: 0px 0px 0px 1px var(--color4) inset;
+	/*border-radius:0px 0px 4px 4px;*/
+	width: 100%;
+}
+#buttonRST:hover,#buttonRSTB:hover,#buttonBCK:hover
+{
+	background:var(--color5hover);
+}
+#buttonATK,#buttonDEF
+{
+	z-index: 101;
+	position: relative;
+	float: left;
+	height: 50px;
+	width: 50%;
+	background:#202028;
+	color:white;
+	text-align: center;
+	text-indent: 0px;
+	cursor:pointer;
+	font-size:15px;
+}
+#buttonATK
+{
+	background:#eb7116;
+}
+#buttonDEF
+{
+	background:#1489e0;
+}
+#operatorsAttack,#operatorsDefense
+{
+	display: none;
+	position: absolute;
+	top:50px;
+	height:calc(100% - 102px);
+	width:auto;
+}
+#operatorsAttack
+{
+	border:1px solid #eb7116;
+	/*box-shadow: 0px 0px 0px 2px #eb7116 inset;*/
+}
+#operatorsDefense
+{
+	border:1px solid #1489e0;
+}
+.operatorBadge
+{
+	height: 90px;
+	display: block;
+	float: left;
+	margin:;
+	cursor: pointer;
+	/filter:grayscale(100%) invert(1);
+	transition:0.1s;
+}

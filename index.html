@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139706710-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-139706710-1');
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="mobileStyle.css">
+		<link rel="stylesheet" href="preload.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet">
+		<link rel="shortcut icon" href="siegeToolIcon.png">
+		<title>Siege Tool</title>
+		<meta name="theme-color" content="#2f3740">
+	</head>
+
+	<body>
+		<div id="preloadImages"></div>
+		<div id="loadingScreen"></div>
+		<div id="background"></div>
+		<div id="siegeTool">
+			<div id="operatorSelectBoard">
+				<div id="buttonATK" onclick="switchSide(0)"><br>Attack</div>
+				<div id="buttonDEF" onclick="switchSide(1)"><br>Defense</div>
+				<div id="buttonRST" onclick="resetA()"><br>Reset</div><!--reset-->
+				<div id="operatorsAttack">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+				</div>
+				<div id="operatorsDefense">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+					<img class="operatorBadge">
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/operatorsList.js"></script>
+	<script src="js/selectionScreen.js"></script>
+	<script>
+		switchSide(0);
+		setOperators();
+		resetA();
+		// for (i = 0;i < miSpawnLocations.length; i++){
+		// 	miSpawnLocations[i].addEventListener('click', spawnSelection(i))
+		// }
+		this.onclick = function(event) {
+		    if (event.target.className == 'operatorBadge'){clickOperator()};
+				if (event.target.id == 'buttonBCK'){goBack()};
+		}
+	</script>
+
+</html>
