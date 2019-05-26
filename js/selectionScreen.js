@@ -9,6 +9,7 @@ function setOperators()
   for (i = 0; i < operators.length; i++)
   {
     operatorBadge[i].src = "badges/" + operators[i] + ".svg";
+    operatorBadge[i].alt = operators[i];
   }
 }
 function resetA()
@@ -18,6 +19,8 @@ function resetA()
   }
 }
 function clickOperator(){
+  console.log(event.target.alt);
+  setCounter(event.target.alt);
   var pane = event.target.closest('.operatorBadge');
   if (pane.style.backgroundColor == "transparent"){
     if (atkSide.style.display == "block") {
