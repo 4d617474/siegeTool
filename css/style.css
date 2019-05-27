@@ -1,12 +1,9 @@
 :root {
   --color1:rgba(10,10,15,.2);
-  --color2:#212129;
-	--color2hover:#353540;
-  --color3:#252533;
-	--color3hover:#393950;
   --color4:rgba(255,255,255,0.05);
   --color5:rgba(255,255,255,0.03);
   --color5hover:rgba(255,255,255,0.1);
+  --color5active:rgba(180,180,180,0.1);
 	--textShadowColor:rgba(0,0,0,.5);
 	/*#101015*/;
 }
@@ -93,9 +90,13 @@ body
 	/*border-radius:0px 0px 4px 4px;*/
 	width: 100%;
 }
-#buttonRST:hover,#buttonRSTB:hover,#buttonBCK:hover
+#buttonRST:hover
 {
 	background:var(--color5hover);
+}
+#buttonRST:active
+{
+	background:var(--color5active);
 }
 #buttonATK,#buttonDEF
 {
@@ -120,7 +121,11 @@ body
 }
 #buttonATK:hover,#buttonDEF:hover
 {
-	box-shadow: 0px 0px 0px 99px var(--color4) inset;
+	box-shadow: 0px 0px 0px 99px var(--color5hover) inset;
+}
+#buttonATK:active,#buttonDEF:active
+{
+	box-shadow: 0px 0px 0px 99px var(--color5active) inset;
 }
 #operatorsAttack,#operatorsDefense
 {
@@ -209,13 +214,13 @@ body
 	width:100%;
 }
 @keyframes rowA{
-	0%{opacity: 0;}
-	100%{opacity: 1;}
+	from{opacity: 0;transform:scaleY(0);}
+	to{opacity: 1;transform:scaleY(1);}
 }
 .row:last-child
 {
 	animation-name: rowA;
-	animation-duration: 0.2s;
+	animation-duration: 0.15s;
 	animation-iteration-count: 1;
 }
 .row:nth-child(odd)
@@ -246,7 +251,7 @@ body
 }
 .operatorBadgeA
 {
-	height: 90px;	
+	height: 90px;
 }
 .operatorBadgeB,.operatorBadgeC
 {
