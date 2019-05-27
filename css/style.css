@@ -66,8 +66,8 @@ body
 {
 	z-index: 100;
 	position:absolute;
-	top:calc(50% - 250px);
-	left:calc(50% - 450px - 10px);
+	top:calc(50% - 276px);
+	left:calc(50% - 450px - 15px);
 	height:calc(550px + 2px);
 	width:calc(450px + 2px);
 	display: block;
@@ -157,8 +157,8 @@ body
 {
 	z-index: 100;
 	position:absolute;
-	top:calc(50% - 250px);
-	right:calc(50% - 470px - 10px);
+	top:calc(50% - 276px);
+	right:calc(50% - 450px - 15px);
 	height:calc(550px + 2px);
 	width:calc(450px + 20px);
 	display: block;

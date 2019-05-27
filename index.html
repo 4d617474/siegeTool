@@ -106,10 +106,12 @@
 		// for (i = 0;i < miSpawnLocations.length; i++){
 		// 	miSpawnLocations[i].addEventListener('click', spawnSelection(i))
 		// }
-		this.onclick = function(event) {
+		//this.ontouchstart
+		this.onclick  = function(event){
 		    if (event.target.className == 'operatorBadge'){clickOperator()};
 				if (event.target.id == 'buttonBCK'){goBack()};
 		}
+
 	</script>
 
 </html>

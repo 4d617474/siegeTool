@@ -1,11 +1,11 @@
-@media (max-width: 590px),(max-height: 605px) 
+@media (max-width: 930px),(max-height: 560px) 
 {
 	#operatorSelectBoard
 	{
-  	top:0px !important;
-  	left:0px !important;
-  	height:100% !important;
-  	width:calc(100% - 0px) !important;
+  	top:0px;
+  	left:0px;
+  	height:60%;
+  	width:calc(100% - 0px);
 	}
 	/*#operatorsAttack,#operatorsDefense
 	{
@@ -13,41 +13,34 @@
 	}*/
 	.operatorBadge
 	{
-		height: 20% !important;
-		width: 20% !important;
-	}
-	#mapInfo
-	{
-		top:0px !important;
-  	left:0px !important;
-  	height:100% !important;
-  	width:calc(100% - 50px) !important;
-	}
-	.mapThumb
-	{
-		line-height: 100px !important;
-	}
-	.spawnLocationsImages
-	{
-		top: -15% !important;
-		left:-60% !important;
-		width: 220% !important;
+		height: 20%;
+		width: 20%;
 	}
 	#modeBomb,#modeHostage,#modeSecure
 	{
-		background-size:220% !important;
+		background-size:220%;
 		background-position: center;
 	}
 	#modeBomb,#modeHostage,#modeSecure
 	{
-		line-height: 200px !important;
+		line-height: 200px;
 	}
-	#menu
+	#operatorCountersBoard
 	{
-		top:0% !important;
-		height: calc(100% - 0px) !important;
-		left:unset !important;
-		right:0% !important;
+  	top:60%;
+  	left:0px;
+  	height:40%;
+  	width:calc(100% - 0px);
+	}
+	.operatorBadgeA
+	{
+		height: 100%;
+		width: 100%;
+	}
+	.operatorBadgeB,.operatorBadgeC
+	{
+		height: 33%;
+		width: 33%;
 	}
 	/*
   #menuOperators,#menuMap
