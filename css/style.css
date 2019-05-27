@@ -23,7 +23,7 @@ body
 	opacity: 1;
 	animation-name: siegeT;
 	animation-duration: 3s;
-	animation-iteration-count:1;	
+	animation-iteration-count:1;
 }
 @keyframes siegeT
 {
@@ -45,7 +45,7 @@ body
 	background-position: center;
 	animation-name: loadingScreen;
 	animation-duration: 1.5s;
-	animation-iteration-count:2;	
+	animation-iteration-count:2;
 }
 @keyframes loadingScreen
 {
@@ -120,7 +120,7 @@ body
 }
 #buttonATK:hover,#buttonDEF:hover
 {
-	box-shadow: 0px 0px 0px 99px var(--color4) inset; 
+	box-shadow: 0px 0px 0px 99px var(--color4) inset;
 }
 #operatorsAttack,#operatorsDefense
 {
@@ -151,7 +151,7 @@ body
 }
 .operatorBadge:hover
 {
-	box-shadow: 0px 0px 0px 99px var(--color4) inset; 
+	box-shadow: 0px 0px 0px 99px var(--color4) inset;
 }
 #operatorCountersBoard
 {
@@ -222,6 +222,10 @@ body
 {
 	background-color:rgba(0,0,0,0.1);
 }
+.row:nth-child(even)
+{
+	background-color:rgba(0,0,0,0.05);
+}
 .countered,.hardCounters,.softCounters
 {
 	float: left;
@@ -234,7 +238,7 @@ body
 }
 #titleHardCounter,#titleSoftCounter,.hardCounters,.softCounters
 {
-	width: 40%;	
+	width: 40%;
 }
 .operatorBadgeA,.operatorBadgeB,.operatorBadgeC
 {
@@ -246,5 +250,5 @@ body
 }
 .operatorBadgeB,.operatorBadgeC
 {
-	height: 45px;	
+	height: 45px;
 }
