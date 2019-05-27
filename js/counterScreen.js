@@ -8,10 +8,10 @@ function setCounter(letter){
   var currentCounters;
   if(letter=="B"){currentCounters = hardCountersF
   }else{currentCounters = softCountersF}
-  console.log(countersSum);
+  //console.log(countersSum);
   //console.log(countersSum);
   for(i=0;i<currentCounters.length;i++){
-    console.log(countersSum);
+  //  console.log(countersSum);
     countersSum += "<img class='operatorBadge" + letter + "' src='badges/"
     + currentCounters[i] + ".svg'>";
   }
@@ -38,10 +38,7 @@ function setCounter(letter){
 function toggleCounter(op,state,side)
 {
   //console.log(op,state,side);
-  if (op == "kapkan"){
-    hardCountersF = ["iq","thatcher","twitch"];
-    softCountersF = ["blitz","buck","finka","fuze","montagne","sledge","zofia"];
-  }
+  whichCounters(op);
   var sidePicked;
   if (side == 1){
     sidePicked = countersAttack;

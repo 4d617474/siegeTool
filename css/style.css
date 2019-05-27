@@ -160,7 +160,7 @@ body
 	top:calc(50% - 250px);
 	right:calc(25% - 225px);
 	height:calc(550px + 2px);
-	width:calc(450px + 2px);
+	width:calc(450px + 20px);
 	display: block;
 	background-color:var(--color1);
 	box-shadow:0px 10px 20px 0px rgba(0, 0, 0, 0.2);
@@ -207,6 +207,17 @@ body
 	float: top;
 	height: 90px;
 	width:100%;
+	animation-name: rowA;
+	animation-duration: 1s;
+	animation-iteration-count: 
+}
+@keyframes rowA{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+.row:nth-child(odd)
+{
+	background-color:rgba(0,0,0,0.1);
 }
 .countered,.hardCounters,.softCounters
 {
