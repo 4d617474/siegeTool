@@ -67,14 +67,14 @@ body
 	z-index: 100;
 	position:absolute;
 	top:calc(50% - 250px);
-	left:calc(50% - 225px);
+	left:calc(25% - 225px);
 	height:calc(550px + 2px);
 	width:calc(450px + 2px);
 	display: block;
 	background-color:var(--color1);
 	box-shadow:0px 10px 20px 0px rgba(0, 0, 0, 0.2);
-	/*overflow: hidden;
-	border-radius:4px;*/
+	overflow: hidden;
+	border-radius:3px;
 }
 #buttonRST
 {
@@ -107,7 +107,6 @@ body
 	background:#202028;
 	color:white;
 	text-align: center;
-	text-indent: 0px;
 	cursor:pointer;
 	font-size:15px;
 }
@@ -153,4 +152,96 @@ body
 .operatorBadge:hover
 {
 	box-shadow: 0px 0px 0px 99px var(--color4) inset; 
+}
+#operatorCountersBoard
+{
+	z-index: 100;
+	position:absolute;
+	top:calc(50% - 250px);
+	right:calc(25% - 225px);
+	height:calc(550px + 2px);
+	width:calc(450px + 20px);
+	display: block;
+	background-color:var(--color1);
+	box-shadow:0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+	border-radius:3px;
+}
+#operatorCountersBoardTitle
+{
+	z-index: 101;
+	position: relative;
+	float: top;
+	height: 50px;
+	width: 100%;
+	background:var(--color4);
+	box-shadow: 0px 0px 0px 1px var(--color4) inset;
+	color:white;
+	text-align: center;
+	text-indent: 0px;
+	cursor:pointer;
+	font-size:15px;
+}
+#titleOperator,#titleHardCounter,#titleSoftCounter
+{
+	position: relative;
+	float: left;
+	height: 100%;
+}
+#countersAttack,#countersDefense
+{
+	position: absolute;
+	left:0%;
+	bottom:0%;
+	height: calc(100% - 50px);
+	width: 100%;
+	box-shadow: 0px 0px 0px 1px var(--color4) inset;
+	overflow: auto;
+}
+#countersAttack
+{
+	display: none;
+}
+.row
+{
+	float: top;
+	height: 90px;
+	width:100%;
+	animation-name: rowA;
+	animation-duration: 1s;
+	animation-iteration-count: 
+}
+@keyframes rowA{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+.row:nth-child(odd)
+{
+	background-color:rgba(0,0,0,0.1);
+}
+.countered,.hardCounters,.softCounters
+{
+	float: left;
+	height: 100%;
+	box-shadow: 1px 0px 0px 0px var(--color4) inset;
+}
+#titleOperator,.countered
+{
+	width: 20%;
+}
+#titleHardCounter,#titleSoftCounter,.hardCounters,.softCounters
+{
+	width: 40%;	
+}
+.operatorBadgeA,.operatorBadgeB,.operatorBadgeC
+{
+	float: left;
+}
+.operatorBadgeA
+{
+	height: 90px;	
+}
+.operatorBadgeB,.operatorBadgeC
+{
+	height: 45px;	
 }
