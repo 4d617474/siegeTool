@@ -9,6 +9,99 @@ var operators = [
 "maestro","alibi","clash","kaid","mozzie","warden"];
 //48
 function whichCounters(op){
+  if (op == "sledge"){
+    hardCountersF = [""];
+    softCountersF = [""];
+  }
+  if (op == "thatcher"){
+    hardCountersF = [""];
+    softCountersF = [""];
+  }
+  if (op == "ash"){
+    hardCountersF = [""];
+    softCountersF = [""];
+  }
+  if (op == "thermite"){
+    hardCountersF = ["mute","bandit","kaid","maestro"];
+    softCountersF = [""];
+  }
+  if (op == "twitch"){
+    hardCountersF = ["mute","mozzie"];
+    softCountersF = [""];
+  }
+  if (op == "montagne"){
+    hardCountersF = [""];
+    softCountersF = [""];
+  }
+  if (op == "glaz"){
+    hardCountersF = [""];
+    softCountersF = [""];
+  }
+  if (op == "fuze"){
+    hardCountersF = ["jager"];
+    softCountersF = [""];
+  }
+  if (op == "blitz"){
+    hardCountersF = [""];
+    softCountersF = [""];
+  }
+  if (op == "iq"){
+    hardCountersF = [""];
+    softCountersF = [""];
+  }
+  if (op == "buck"){
+    hardCountersF = [""];
+    softCountersF = [""];
+  }
+  if (op == "blackbeard"){
+    hardCountersF = [""];
+    softCountersF = [""];
+  }
+  if (op == "capitao"){
+    hardCountersF = [""];
+    softCountersF = [""];
+  }
+  if (op == "hibana"){
+    hardCountersF = ["mute","bandit","kaid","maestro"];
+    softCountersF = [""];
+  }
+  if (op == "jackal"){
+    hardCountersF = [""];
+    softCountersF = [""];
+  }
+  if (op == "ying"){
+    hardCountersF = ["warden","jager"];
+    softCountersF = [""];
+  }
+  if (op == "zofia"){
+    hardCountersF = ["jager"];
+    softCountersF = ["ela"];
+  }
+  if (op == "dokkaebi"){
+    hardCountersF = [""];
+    softCountersF = [""];
+  }
+  if (op == "lion"){
+    hardCountersF = [""];
+    softCountersF = [""];
+  }
+  if (op == "finka"){
+    hardCountersF = [""];
+    softCountersF = [""];
+  }
+  if (op == "maverick"){
+    hardCountersF = [""];
+    softCountersF = [""];
+  }
+  if (op == "nomad"){
+    hardCountersF = [""];
+    softCountersF = [""];
+  }
+  if (op == "gridlock"){
+    hardCountersF = [""];
+    softCountersF = [""];
+  }
+  //DEFENSE
   if (op == "smoke"){
     hardCountersF = ["glaz"];
     softCountersF = ["iq","thatcher","twitch"];
