@@ -62,6 +62,14 @@ body
 	background-position:center;
 	background-size: 100% 100%;
 	filter:blur(40px);
+	animation-name: bg;
+	animation-duration: 1.5s;
+	animation-iteration-count:1;
+}
+@keyframes bg
+{
+	0% { opacity: 0;}
+	100% { opacity: 1;}
 }
 #operatorSelectBoard
 {
