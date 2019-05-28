@@ -13,7 +13,7 @@ function setCounter(letter){
   for(i=0;i<currentCounters.length;i++){
   //  console.log(countersSum);
     countersSum += "<img class='operatorBadge" + letter + "' src='badges/"
-    + currentCounters[i] + ".svg'>";
+    + currentCounters[i] + ".png'>";
   }
   //console.log(countersSum);
   return countersSum;
@@ -23,7 +23,7 @@ function setCounter(letter){
 //   for(i=0;i<hardCountersF.length;i++){
 //     console.log(hardCountersF[i]);
 //     countersSum += "<img class='operatorBadgeB' src='badges/" +
-//     hardCountersF[i] + ".svg'>";
+//     hardCountersF[i] + ".png'>";
 //   }
 //   return countersSum;
 // }
@@ -31,7 +31,7 @@ function setCounter(letter){
 //   var countersSum;
 //   for(i=0;i<softCountersF.length;i++){
 //     countersSum += "<img class='operatorBadgeC' src='badges/" +
-//     softCountersF[i] + ".svg'>";
+//     softCountersF[i] + ".png'>";
 //   }
 //  return countersSum;
 // }
@@ -49,7 +49,7 @@ function toggleCounter(op,state,side)
     sidePicked.innerHTML = sidePicked.innerHTML +
     '<div id="' + op + '" class="row">' +
       '<div class="countered">' +
-        '<img class="operatorBadgeA" src="badges/' + op  + '.svg">' +
+        '<img class="operatorBadgeA" src="badges/' + op  + '.png">' +
       '</div>' +
       '<div class="hardCounters">' + setCounter("B") + '</div>' +
       '<div class="softCounters">' + setCounter("C") + '</div>' +

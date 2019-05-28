@@ -30,20 +30,20 @@ function whichCounters(op){
     softCountersF = [""];
   }
   if (op == "montagne"){
-    hardCountersF = [""];
+    hardCountersF = ["castle"];
     softCountersF = [""];
   }
   if (op == "glaz"){
     hardCountersF = [""];
-    softCountersF = [""];
+    softCountersF = ["castle"];
   }
   if (op == "fuze"){
-    hardCountersF = ["jager"];
+    hardCountersF = ["jager","mute","pulse"];
     softCountersF = [""];
   }
   if (op == "blitz"){
     hardCountersF = [""];
-    softCountersF = [""];
+    softCountersF = ["mute"];
   }
   if (op == "iq"){
     hardCountersF = [""];
@@ -51,7 +51,7 @@ function whichCounters(op){
   }
   if (op == "buck"){
     hardCountersF = [""];
-    softCountersF = [""];
+    softCountersF = ["castle"];
   }
   if (op == "blackbeard"){
     hardCountersF = [""];
@@ -59,14 +59,14 @@ function whichCounters(op){
   }
   if (op == "capitao"){
     hardCountersF = [""];
-    softCountersF = [""];
+    softCountersF = ["castle"];
   }
   if (op == "hibana"){
     hardCountersF = ["mute","bandit","kaid","maestro"];
     softCountersF = [""];
   }
   if (op == "jackal"){
-    hardCountersF = [""];
+    hardCountersF = ["caveira"];
     softCountersF = [""];
   }
   if (op == "ying"){
@@ -79,11 +79,11 @@ function whichCounters(op){
   }
   if (op == "dokkaebi"){
     hardCountersF = [""];
-    softCountersF = [""];
+    softCountersF = ["mute","castle"];
   }
   if (op == "lion"){
     hardCountersF = [""];
-    softCountersF = [""];
+    softCountersF = ["mute","castle"];
   }
   if (op == "finka"){
     hardCountersF = [""];
@@ -91,13 +91,17 @@ function whichCounters(op){
   }
   if (op == "maverick"){
     hardCountersF = [""];
-    softCountersF = [""];
+    softCountersF = ["castle","bandit","kaid"];
   }
   if (op == "nomad"){
     hardCountersF = [""];
     softCountersF = [""];
   }
   if (op == "gridlock"){
+    hardCountersF = [""];
+    softCountersF = [""];
+  }
+  if (op == "nokk"){
     hardCountersF = [""];
     softCountersF = [""];
   }
