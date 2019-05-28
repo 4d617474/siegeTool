@@ -34,7 +34,7 @@ function whichCounters(op){
     softCountersF = ["castle"];
   }
   if (op == "glaz"){
-    hardCountersF = [""];
+    hardCountersF = [];
     softCountersF = ["castle"];
   }
   if (op == "fuze"){
@@ -78,24 +78,24 @@ function whichCounters(op){
     softCountersF = ["ela"];
   }
   if (op == "dokkaebi"){
-    hardCountersF = [""];
+    hardCountersF = ["vigil","echo"];
     softCountersF = ["mute","castle"];
   }
   if (op == "lion"){
-    hardCountersF = [""];
-    softCountersF = ["mute","castle"];
+    hardCountersF = ["vigil","mute"];
+    softCountersF = ["castle"];
   }
   if (op == "finka"){
-    hardCountersF = [""];
-    softCountersF = [""];
+    hardCountersF = ["echo","finka"];
+    softCountersF = ["pulse","smoke"];
   }
   if (op == "maverick"){
     hardCountersF = [""];
     softCountersF = ["castle","bandit","kaid"];
   }
   if (op == "nomad"){
-    hardCountersF = [""];
-    softCountersF = [""];
+    hardCountersF = ["jager"];
+    softCountersF = ["bandit","kaid"];
   }
   if (op == "gridlock"){
     hardCountersF = [""];
@@ -105,7 +105,9 @@ function whichCounters(op){
     hardCountersF = [""];
     softCountersF = [""];
   }
+
   //DEFENSE
+
   if (op == "smoke"){
     hardCountersF = ["glaz"];
     softCountersF = ["iq","thatcher","twitch"];

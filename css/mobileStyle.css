@@ -7,23 +7,10 @@
   	height:60%;
   	width:calc(100% - 0px);
 	}
-	/*#operatorsAttack,#operatorsDefense
-	{
-		overflow: scroll !important;
-	}*/
 	.operatorBadge
 	{
 		height: 20%;
 		width: 20%;
-	}
-	#modeBomb,#modeHostage,#modeSecure
-	{
-		background-size:220%;
-		background-position: center;
-	}
-	#modeBomb,#modeHostage,#modeSecure
-	{
-		line-height: 200px;
 	}
 	#operatorCountersBoard
 	{
@@ -42,13 +29,39 @@
 		height: 33%;
 		width: 33%;
 	}
-	/*
-  #menuOperators,#menuMap
+}
+@media (width > 500px) and (height < 560px) 
+{
+	#operatorSelectBoard
 	{
-		background-color:var(--color3) !important;;
+  	top:0px;
+  	left:0px;
+  	height:100%;
+  	width:calc(50% - 0px);
+		border-radius:0px;
+		box-shadow:6px 0px 20px 0px rgba(0, 0, 0, 0.5);
 	}
-  #menuOperators:hover,#menuMap:hover
+	.operatorBadge
 	{
-		background-color:var(--color3hover) !important;
-	}*/
+		height: 20%;
+		width: 20%;
+	}
+	#operatorCountersBoard
+	{
+  	top:0px;
+  	left:calc(50% + 0px);
+  	height:100%;
+  	width:calc(50% - 0px);
+		border-radius:0px;
+	}
+	.operatorBadgeA
+	{
+		height: 100%;
+		width: 100%;
+	}
+	.operatorBadgeB,.operatorBadgeC
+	{
+		height: 33%;
+		width: 33%;
+	}
 }
