@@ -10,28 +10,28 @@ var operators = [
 //48
 function whichCounters(op){
   if (op == "sledge"){
-    hardCountersF = [""];
-    softCountersF = [""];
+    hardCountersF = ["pulse"];
+    softCountersF = [];
   }
   if (op == "thatcher"){
-    hardCountersF = [""];
-    softCountersF = [""];
+    hardCountersF = ["jager"];
+    softCountersF = [];
   }
   if (op == "ash"){
-    hardCountersF = [""];
-    softCountersF = [""];
+    hardCountersF = ["jager"];
+    softCountersF = [];
   }
   if (op == "thermite"){
     hardCountersF = ["mute","bandit","kaid","maestro"];
-    softCountersF = [""];
+    softCountersF = [];
   }
   if (op == "twitch"){
     hardCountersF = ["mute","mozzie"];
-    softCountersF = [""];
+    softCountersF = ["vigil","bandit"];
   }
   if (op == "montagne"){
-    hardCountersF = ["castle"];
-    softCountersF = [""];
+    hardCountersF = ["smoke","echo","ela"];
+    softCountersF = ["castle"];
   }
   if (op == "glaz"){
     hardCountersF = [""];
@@ -42,7 +42,7 @@ function whichCounters(op){
     softCountersF = [""];
   }
   if (op == "blitz"){
-    hardCountersF = [""];
+    hardCountersF = ["smoke","ela"];
     softCountersF = ["mute"];
   }
   if (op == "iq"){
