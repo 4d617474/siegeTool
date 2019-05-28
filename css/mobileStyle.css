@@ -30,7 +30,7 @@
 		width: 33%;
 	}
 }
-@media (width > 500px) and (height < 560px) 
+@media (min-aspect-ratio: 1/1) and (max-width: 930px),(max-height: 560px) 
 {
 	#operatorSelectBoard
 	{
