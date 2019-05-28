@@ -14,7 +14,7 @@ body
 	background-color:#15191e;
 	-moz-user-select: none;
 	user-select:none;
- 	background-image: linear-gradient(to right bottom, #944a87, #944b91, #924c9c, #8d4fa8, #8752b4, #7852b1, #6951ad, #5a50a8, #474992, #38417c, #2c3965, #24304f);
+ 	/*background-image: linear-gradient(to right bottom, #944a87, #944b91, #924c9c, #8d4fa8, #8752b4, #7852b1, #6951ad, #5a50a8, #474992, #38417c, #2c3965, #24304f);*/
 }
 #siegeTool
 {
