@@ -14,12 +14,6 @@ body
 	background-color:#15191e;
 	-moz-user-select: none;
 	user-select:none;
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	top:-0%;
-	left:-0%;
- 	background-image: linear-gradient(to right bottom, #944a87, #944b91, #924c9c, #8d4fa8, #8752b4, #7852b1, #6951ad, #5a50a8, #474992, #38417c, #2c3965, #24304f);
 }
 #siegeTool
 {
@@ -63,10 +57,10 @@ body
 	width: 100%;
 	top:-0%;
 	left:-0%;
+ 	background-image: linear-gradient(to right bottom, #944a87, #944b91, #924c9c, #8d4fa8, #8752b4, #7852b1, #6951ad, #5a50a8, #474992, #38417c, #2c3965, #24304f);
 	background-image:url('../house.png');
 	background-position:center;
-	background-size:cover;
-	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	filter:blur(0px);
 	animation-name: bg;
 	animation-duration: 4s;
@@ -75,7 +69,7 @@ body
 @keyframes bg
 {
 	0% { opacity: 0;}
-	25% { opacity: 0;}	
+	25% { opacity: 0;}
 	100% { opacity: 1;}
 }
 #operatorSelectBoard
