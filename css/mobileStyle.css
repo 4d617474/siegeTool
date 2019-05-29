@@ -31,13 +31,6 @@
 			height: 33%;
 			width: 33%;
 		}
-	#aboutContainer
-		{
-			top: 50px;
-			left: 50px;
-			height: calc(100% - 100px);
-			width: calc(100% - 100px);
-		}
 	}
 	@media (orientation: landscape)
 	{
@@ -73,5 +66,15 @@
 			height: 33%;
 			width: 33%;
 		}
+	}
+}
+@media (max-height:300px),(max-width:300px)
+{
+	#aboutContainer
+	{
+		top:0px;
+		left:0%;
+		height:100%;
+		width:100%;
 	}
 }
