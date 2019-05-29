@@ -51,7 +51,7 @@
 		#operatorCountersBoard
 		{
 			top:0px;
-			left:calc(50% + 0px);
+			right:0%;
 			height:100%;
 			width:calc(50% - 0px);
 			border-radius:0px;
