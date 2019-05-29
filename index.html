@@ -25,7 +25,7 @@
 		<div id="preloadImages"></div>
 		<div id="loadingScreen"></div>
 		<div id="background"></div>
-		<div id="siegeTool">
+		<div id="siegeTool" style="filter:none">
 			<div id="operatorSelectBoard">
 				<div id="buttonATK" onclick="switchSide(0)"><br>Attack</div>
 				<div id="buttonDEF" onclick="switchSide(1)"><br>Defense</div>
@@ -93,11 +93,24 @@
 				<div id="countersDefense"></div>
 			</div>
 		</div>
+		<div id="about" onclick="aboutFunction()">
+			<div id="aboutFrame" style="display:none">
+				<div id="aboutContainer">
+					<div id="aboutLogo"></div>
+					<p id="aboutText">SiegeTool is a page designed to help people remember
+					what characters the opposite team picked during a round and pick the
+					 apropriate counter.
+					</p>
+
+				</div>
+			</div>
+		</div>
 	</body>
 	<script src="js/operatorsList.js"></script>
 	<script src="js/selectionScreen.js"></script>
 	<script src="js/counterScreen.js"></script>
 	<script src="js/randomBackground.js"></script>
+	<script src="js/about.js"></script>
 	<script>
 		switchSide(1);
 		setOperators();
