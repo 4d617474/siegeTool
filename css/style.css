@@ -333,7 +333,7 @@ a
 	position: absolute;
 	top:calc(50% - 150px);
 	left:calc(50% - 175px);
-	height: 344px;
+	height: 360px;
 	width: 350px;
 	z-index: 201;
 	background-color:rgba(0,0,0,0.4);
@@ -342,26 +342,40 @@ a
 	transition:.5s;
 	border-radius:3px;
 	overflow: auto;
+  color:white;
+	text-align: center;
+	text-shadow: 0px -1px black;
 }
 #aboutLogo
 {
+	float:left;
 	position: relative;
 	margin-top:20px;
 	height: 90px;
-	width: 100%;
+	width: 40%;
 	background: url("../siegeToolLoading.png");
 	background-size: auto 100%;
 	background-position: center;
 	background-repeat: no-repeat;
 }
-#aboutTextA,#aboutTextB,#aboutTextC
+#aboutTextA,#aboutTextC
 {
 	position: relative;
 	height: auto;
 	left:5%;
 	width: 90%;
-  color:white;
-	text-align: center;
+}
+#aboutTextB
+{
+	float: left;
+	position: relative;
+	height: auto;
+	padding-top: 20px;
+	height:50px;
+	width: 60%;
+	text-align: left;
+	font-size: 25px;
+	z-index: 1;
 }
 .aboutIntro
 {
