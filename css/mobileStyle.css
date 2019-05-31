@@ -28,8 +28,8 @@
 		}
 		.operatorBadgeB,.operatorBadgeC
 		{
-			height: 33%;
-			width: 33%;
+			height: 50%;
+			width: 25%;
 		}
 	}
 	@media (orientation: landscape)
@@ -63,8 +63,8 @@
 		}
 		.operatorBadgeB,.operatorBadgeC
 		{
-			height: 33%;
-			width: 33%;
+			height: 50%;
+			width: 25%;
 		}
 	}
 }
