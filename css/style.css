@@ -308,11 +308,11 @@ a
 	animation-duration: 3s;
 	animation-iteration-count:1;
 }
-#about:hover,#changeBg:hover,#githubLink:hover
+#about:hover,#changeBg:hover,#githubLink:hover,#discordLink:hover
 {
 	background-color:rgba(250,250,250,0.1);
 }
-#about:active,#changeBg:active,#githubLink:active
+#about:active,#changeBg:active,#githubLink:active,#discordLink:active
 {
 	background-color:rgba(250,250,250,0.05);
 }
@@ -332,9 +332,9 @@ a
 {
 	position: absolute;
 	top:calc(50% - 180px);
-	left:calc(50% - 175px);
-	height: 360px;
-	width: 350px;
+	left:calc(50% - 150px);
+	height: 395px;
+	width: 300px;
 	z-index: 201;
 	background-color:rgba(0,0,0,0.4);
 	box-shadow:0px 10px 20px 0px rgba(0, 0, 0, 0.2),
@@ -344,7 +344,6 @@ a
 	overflow: auto;
   color:white;
 	text-align: center;
-	text-shadow: 0px -1px black;
 }
 #aboutLogo
 {
@@ -358,7 +357,7 @@ a
 	background-position: center;
 	background-repeat: no-repeat;
 }
-#aboutTextA,#aboutTextC
+#aboutTextA,#aboutTextC,#aboutTextD
 {
 	position: relative;
 	height: auto;
@@ -388,19 +387,28 @@ a
 	from{opacity: 0;transform:scale3d(.8,.8,1);}
 	to{opacity: 1;transform:scale3d(1,1,1);}
 }
-#changeBg,#githubLink
+#changeBg,#githubLink,#discordLink
 {
+	float:left;
 	position: relative;
 	height: 23px;
-	width: 100%;
 	z-index: 201;
 	text-align:center;
 	color:white;
 	background-color:rgba(250,250,250,0.05);
-	box-shadow:	0px 1px 0px rgba(255,255,255,.05) inset,	0px -1px 0px rgba(0,0,0,0.1);
+	box-shadow:	-1px 0px 0px rgba(255,255,255,.05) inset,	0px 1px 0px rgba(255,255,255,.05) inset,	0px -1px 0px rgba(0,0,0,0.1);
 	transition:.2s;
 	padding-top:5px;
 	font-weight: bold;
 	letter-spacing: 1px;
 	cursor: pointer;
+}
+#changeBg
+{
+	bottom:0px;
+	width: 100%;	
+}
+#githubLink,#discordLink
+{
+	width:50%;
 }
