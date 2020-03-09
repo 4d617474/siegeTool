@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operators>
+  <target>
+    <name>gridlock</name>
+    <description>undefined</description>
+  </target>
+  <softCounter>
+    <name>warden</name>
+    <description>undefined</description>
+  </softCounter>
+</operators>

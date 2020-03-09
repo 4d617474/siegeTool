@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operators>
+  <target>
+    <name>thatcher</name>
+    <description>undefined</description>
+  </target>
+  <hardCounter>
+    <name>jager</name>
+    <description>undefined</description>
+  </hardCounter>
+</operators>

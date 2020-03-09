@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operators>
+  <target>
+    <name>castle</name>
+    <description>undefined</description>
+  </target>
+  <hardCounter>
+    <name>ash</name>
+    <description>undefined</description>
+  </hardCounter>
+  <hardCounter>
+    <name>hibana</name>
+    <description>undefined</description>
+  </hardCounter>
+  <hardCounter>
+    <name>sledge</name>
+    <description>undefined</description>
+  </hardCounter>
+  <hardCounter>
+    <name>zofia</name>
+    <description>undefined</description>
+  </hardCounter>
+  <softCounter>
+    <name>finka</name>
+    <description>undefined</description>
+  </softCounter>
+  <softCounter>
+    <name>buck</name>
+    <description>undefined</description>
+  </softCounter>
+  <softCounter>
+    <name>maverick</name>
+    <description>undefined</description>
+  </softCounter>
+  <softCounter>
+    <name>thermite</name>
+    <description>undefined</description>
+  </softCounter>
+</operators>

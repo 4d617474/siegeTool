@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operators>
+  <target>
+    <name>jager</name>
+    <description>undefined</description>
+  </target>
+  <hardCounter>
+    <name>thatcher</name>
+    <description>undefined</description>
+  </hardCounter>
+  <hardCounter>
+    <name>twitch</name>
+    <description>undefined</description>
+  </hardCounter>
+  <softCounter>
+    <name>iq</name>
+    <description>undefined</description>
+  </softCounter>
+</operators>

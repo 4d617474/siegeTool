@@ -6,12 +6,12 @@ function aboutFunction(){
   if (abtFrame.style.display == "none"){
     abtFrame.style.display = "block";
     abtCont.classList.add("aboutIntro");
-    sgTool.style.filter = "blur(20px)";
+    sgTool.style.display = "none";
     abt.style.backgroundImage = 'url("back.png")';
   } else {
     abtFrame.style.display = "none";
     abtCont.classList.remove("aboutIntro");
-    sgTool.style.filter = "none";
+    sgTool.style.display = "block";
     abt.style.backgroundImage = 'url("info.png")';
   }
 }

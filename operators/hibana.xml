@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operators>
+  <target>
+    <name>hibana</name>
+    <description>undefined</description>
+  </target>
+  <hardCounter>
+    <name>mute</name>
+    <description>undefined</description>
+  </hardCounter>
+  <hardCounter>
+    <name>bandit</name>
+    <description>undefined</description>
+  </hardCounter>
+  <hardCounter>
+    <name>kaid</name>
+    <description>undefined</description>
+  </hardCounter>
+  <hardCounter>
+    <name>maestro</name>
+    <description>undefined</description>
+  </hardCounter>
+  <softCounter>
+    <name>warden</name>
+    <description>undefined</description>
+  </softCounter>
+</operators>

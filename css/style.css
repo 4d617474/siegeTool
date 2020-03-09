@@ -1,67 +1,23 @@
-:root {
-  --color1:rgba(10,10,15,.2);
-  --color4:rgba(255,255,255,0.05);
-  --color5:rgba(255,255,255,0.03);
-  --color5hover:rgba(255,255,255,0.1);
-  --color5active:rgba(180,180,180,0.1);
-	--textShadowColor:rgba(0,0,0,.5);
-	/*#101015*/;
+:root
+{
+    --colorBackgroundA:rgba(10,10,15,.2);
+    --color1:rgba(10,10,15,.2);
+    --color4:rgba(255,255,255,0.05);
+    --color5:rgba(255,255,255,0.03);
+    --color5hover:rgba(255,255,255,0.1);
+    --color5active:rgba(180,180,180,0.1);
+    --textShadowColor:rgba(0,0,0,.5);
 }
 body
 {
 	font-family: 'Raleway', Arial;
 	text-decoration: none;
 	background-color:#15191e;
-	-moz-user-select: none;
-	user-select:none;
- 	/*background-image: linear-gradient(to right bottom, #944a87, #944b91, #924c9c, #8d4fa8, #8752b4, #7852b1, #6951ad, #5a50a8, #474992, #38417c, #2c3965, #24304f);*/
-}
-a
-{
-	font-weight: bold;
-	color:white;
-	text-decoration: none;
-}
-#siegeTool
-{
-	position: fixed;
-	top:0px;
-	left:0px;
-	height: 100%;
-	width: 100%;
-	opacity: 1;
-	animation-name: siegeT;
-	animation-duration: 3s;
-	animation-iteration-count:1;
-	transition:filter .5s;
-}
-@keyframes siegeT
-{
-	0% { opacity: 0;}
-	90% { opacity: 0;}
-	100% { opacity: 1;}
-}
-#loadingScreen
-{
-	position:fixed;
-	top:calc(50% - 100px);
-	left:calc(50% - 100px);
-	height: 200px;
-	width: 200px;
-	z-index: -1;
-	opacity: 0;
-	background: url("../siegeToolLoading.png");
-	background-size: 200px;
-	background-position: center;
-	animation-name: loadingScreen;
-	animation-duration: 1.5s;
-	animation-iteration-count:2;
-}
-@keyframes loadingScreen
-{
-	0% { opacity: 0;}
-	50% { opacity: 1;}
-	100% { opacity: 0;}
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 #background
 {
@@ -70,8 +26,6 @@ a
 	width: 100%;
 	top:-0%;
 	left:-0%;
- 	background-image: linear-gradient(to right bottom, #944a87, #944b91, #924c9c, #8d4fa8, #8752b4, #7852b1, #6951ad, #5a50a8, #474992, #38417c, #2c3965, #24304f);
-	background-image:url('../house.png');
 	background-position:center;
 	background-repeat: no-repeat;
 	background-size: cover ;
@@ -86,24 +40,79 @@ a
 	25% { opacity: 0;}
 	100% { opacity: 1;}
 }
+#siegeTool
+{
+	position: fixed;
+	top:0px;
+	left:0px;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+}
+#operatorSelectBoard,#operatorCountersBoard
+{
+  position:absolute;
+  z-index: 100;
+  top:calc(50% - 276px);
+  height:calc(550px + 2px);
+  display: block;
+  background-color:var(--colorBackgroundA);
+  box-shadow:0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  border-radius:3px;
+  transition:0.2s;
+}
 #operatorSelectBoard
 {
-	z-index: 100;
-	position:absolute;
-	top:calc(50% - 276px);
 	left:calc(50% - 450px - 15px);
-	height:calc(550px + 2px);
-	width:calc(450px + 2px);
-	display: block;
-	background-color:var(--color1);
-	box-shadow:0px 10px 20px 0px rgba(0, 0, 0, 0.2);
-	overflow: hidden;
-	border-radius:3px;
-	transition:0.2s;
+  width:calc(450px + 2px);
+}
+#operatorCountersBoard
+{
+	right:calc(50% - 450px - 15px);
+	width:calc(450px + 20px);
+}
+.countersBoard
+{
+	position: absolute;
+	left:0%;
+	bottom:0%;
+	height: calc(100% - 50px);
+	width: 100%;
+	box-shadow: 0px 0px 0px 1px var(--color4) inset;
+	overflow:auto;
+}
+.sideSelect
+{
+	z-index: 2;
+	position: relative;
+	float: left;
+	height: 50px;
+	width: 50%;
+	background:#202028;
+	color:white;
+	text-align: center;
+	cursor:pointer;
+	font-size:15px;
+}
+.sideSelect.attack
+{
+	background:#eb7116;
+}
+.sideSelect.defense
+{
+	background:#1489e0;
+}
+.sideSelect:hover
+{
+	box-shadow: 0px 0px 0px 99px var(--color5hover) inset;
+}
+.sideSelect:active
+{
+	box-shadow: 0px 0px 0px 99px var(--color5active) inset;
 }
 #buttonRST
 {
-	z-index: 101;
+	z-index: 3;
 	position: absolute;
 	bottom:0px;
 	height: 50px;
@@ -126,43 +135,14 @@ a
 {
 	background:var(--color5active);
 }
-#buttonATK,#buttonDEF
-{
-	z-index: 101;
-	position: relative;
-	float: left;
-	height: 50px;
-	width: 50%;
-	background:#202028;
-	color:white;
-	text-align: center;
-	cursor:pointer;
-	font-size:15px;
-}
-#buttonATK
-{
-	background:#eb7116;
-}
-#buttonDEF
-{
-	background:#1489e0;
-}
-#buttonATK:hover,#buttonDEF:hover
-{
-	box-shadow: 0px 0px 0px 99px var(--color5hover) inset;
-}
-#buttonATK:active,#buttonDEF:active
-{
-	box-shadow: 0px 0px 0px 99px var(--color5active) inset;
-}
-#operatorsAttack,#operatorsDefense
-{
-	display: none;
+#operatorsAttack, #operatorsDefense{
+
 	position: absolute;
 	top:50px;
 	height:calc(100% - 102px);
 	width:auto;
 }
+
 #operatorsAttack
 {
 	border:1px solid #eb7116;
@@ -172,80 +152,43 @@ a
 {
 	border:1px solid #1489e0;
 }
-.operatorBadge
+#titleCounters
 {
-	height: 90px;
-	width:90px;
-	display: block;
-	float: left;
-	margin:;
-	cursor: pointer;
-	/filter:grayscale(100%) invert(1);
-	transition:0.1s;
+  z-index: 3;
+  position: relative;
+  float: top;
+  height: 50px;
+  width: 100%;
+  background:var(--color4);
+  box-shadow: 0px 0px 0px 1px var(--color4) inset;
+  color:white;
+  text-align: center;
+  text-indent: 0px;
+  font-size:15px;
 }
-.operatorBadge:hover
+.title
 {
-	box-shadow: 0px 0px 0px 99px var(--color4) inset;
+  position: relative;
+  float: left;
+  height: 100%;
+  text-align: center;
 }
-#operatorCountersBoard
+.title.countered
 {
-	z-index: 100;
-	position:absolute;
-	top:calc(50% - 276px);
-	right:calc(50% - 450px - 15px);
-	height:calc(550px + 2px);
-	width:calc(450px + 20px);
-	display: block;
-	background-color:var(--color1);
-	box-shadow:0px 10px 20px 0px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-	border-radius:3px;
-	transition:0.2s;
+  width:20%;
 }
-#operatorCountersBoardTitle
+.title.hardCounter,.title.softCounter
 {
-	z-index: 101;
-	position: relative;
-	float: top;
-	height: 50px;
-	width: 100%;
-	background:var(--color4);
-	box-shadow: 0px 0px 0px 1px var(--color4) inset;
-	color:white;
-	text-align: center;
-	text-indent: 0px;
-	cursor:pointer;
-	font-size:15px;
-}
-#titleOperator,#titleHardCounter,#titleSoftCounter
-{
-	position: relative;
-	float: left;
-	height: 100%;
-}
-#countersAttack,#countersDefense
-{
-	position: absolute;
-	left:0%;
-	bottom:0%;
-	height: calc(100% - 50px);
-	width: 100%;
-	box-shadow: 0px 0px 0px 1px var(--color4) inset;
-	overflow: auto;
-}
-#countersAttack
-{
-	display: none;
+  width:40%;
 }
 .row
 {
-	float: top;
-	height: 90px;
-	width:100%;
-}
-@keyframes rowA{
-	from{opacity: 0;transform:scaleY(0);}
-	to{opacity: 1;transform:scaleY(1);}
+  box-shadow: 0px -1px 0px 0px var(--color4) inset;
+  position:relative;
+  float:top;
+  display:block;
+  width:calc(100%);
+  height:90px;
 }
 .row:last-child
 {
@@ -261,31 +204,101 @@ a
 {
 	background-color:rgba(0,0,0,0.05);
 }
-.countered,.hardCounters,.softCounters
+
+.block
 {
+  float:left;
+  height:100%;
+  box-shadow: 1px 0px 0px 0px var(--color4) inset;
+}
+.block.countered
+{
+	width:20%;
+}
+.block.hardCounter, .block.softCounter
+{
+	width:40%;
+}
+.operator
+{
+  position: relative;
+  width:75px;
+  display:block;
+  float:left;
+}
+.operatorBadge
+{
+  position: relative;
+	height:100%;
+	width:100%;
+	display: block;
 	float: left;
-	height: 100%;
-	box-shadow: 1px 0px 0px 0px var(--color4) inset;
+	margin:;
+	transition:0.1s;
+  background-color:transparent;
 }
-#titleOperator,.countered
+.operatorBadge:hover
 {
-	width: 20%;
+	box-shadow: 0px 0px 0px 99px var(--color4) inset;
 }
-#titleHardCounter,#titleSoftCounter,.hardCounters,.softCounters
+.operator.list
 {
-	width: 40%;
+	cursor:pointer;
 }
-.operatorBadgeA,.operatorBadgeB,.operatorBadgeC
+.operator.countered,.operator.hardCounter,.operator.softCounter
 {
-	float: left;
+	cursor:default;
 }
-.operatorBadgeA
+.operator.countered
 {
 	height: 90px;
+	width: 90px;
 }
-.operatorBadgeB,.operatorBadgeC
+.operator.hardCounter,.operator.softCounter
 {
 	height: 45px;
+	width: 45px;
+}
+.operator .tooltiptext {
+  opacity: 0;
+  color:white;
+  visibility: hidden;
+  position: absolute;
+  width:120px;
+  background-color: black;
+  color:white;
+  text-align: center;
+  padding: 8px 0;
+  top:100%;
+  left:50%;
+  margin-top: -5px;
+  margin-left: -60px;
+  transition: opacity .2s, margin .2s;
+  z-index: 3;
+}
+.tooltiptext.list{
+  transition-delay: .5s;
+  width:75px;
+  margin-left: -37.5px;
+  text-transform: capitalize;
+}
+.operator .tooltiptext::after {
+  content:"";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left:-5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+.operator:hover .tooltiptext {
+  margin-top: 0px;
+  opacity: 1;
+  visibility: visible;
+}
+.operator:hover .tooltiptext:hover {
+  visibility: hidden;
 }
 #about
 {
@@ -384,31 +397,6 @@ a
 }
 @keyframes abtIntro
 {
-	from{opacity: 0;transform:scale3d(.8,.8,1);}
-	to{opacity: 1;transform:scale3d(1,1,1);}
-}
-#changeBg,#githubLink,#discordLink
-{
-	float:left;
-	position: relative;
-	height: 23px;
-	z-index: 201;
-	text-align:center;
-	color:white;
-	background-color:rgba(250,250,250,0.05);
-	box-shadow:	-1px 0px 0px rgba(255,255,255,.05) inset,	0px 1px 0px rgba(255,255,255,.05) inset,	0px -1px 0px rgba(0,0,0,0.1);
-	transition:.2s;
-	padding-top:5px;
-	font-weight: bold;
-	letter-spacing: 1px;
-	cursor: pointer;
-}
-#changeBg
-{
-	bottom:0px;
-	width: 100%;	
-}
-#githubLink,#discordLink
-{
-	width:50%;
+	/* from{opacity: 0;transform:scale3d(.8,.8,1);}
+	to{opacity: 1;transform:scale3d(1,1,1);} */
 }

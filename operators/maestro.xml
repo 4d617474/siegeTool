@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operators>
+  <target>
+    <name>maestro</name>
+    <description>undefined</description>
+  </target>
+  <hardCounter>
+    <name>ash</name>
+    <description>undefined</description>
+  </hardCounter>
+  <hardCounter>
+    <name>buck</name>
+    <description>undefined</description>
+  </hardCounter>
+  <hardCounter>
+    <name>finka</name>
+    <description>undefined</description>
+  </hardCounter>
+  <hardCounter>
+    <name>maverick</name>
+    <description>undefined</description>
+  </hardCounter>
+  <hardCounter>
+    <name>sledge</name>
+    <description>undefined</description>
+  </hardCounter>
+  <hardCounter>
+    <name>thatcher</name>
+    <description>undefined</description>
+  </hardCounter>
+  <hardCounter>
+    <name>twitch</name>
+    <description>undefined</description>
+  </hardCounter>
+  <hardCounter>
+    <name>zofia</name>
+    <description>undefined</description>
+  </hardCounter>
+  <softCounter>
+    <name>dokkaebi</name>
+    <description>undefined</description>
+  </softCounter>
+</operators>

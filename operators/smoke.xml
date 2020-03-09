@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operators>
+  <target>
+    <name>Smoke</name>
+    <description>undefined</description>
+  </target>
+  <hardCounter>
+    <name>Glaz</name>
+    <description>Glaz is able to see Smoke through the smoke with his scope.</description>
+  </hardCounter>
+  <softCounter>
+    <name>IQ</name>
+    <description>IQ can spot Smoke's gas canisters</description>
+  </softCounter>
+  <softCounter>
+    <name>Thatcher</name>
+    <description>Thatcher can destroy Smoke's gas canisters</description>
+  </softCounter>
+  <softCounter>
+    <name>Twitch</name>
+    <description>Twitch can spot Smoke's gas canisters</description>
+  </softCounter>
+</operators>

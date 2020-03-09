@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operators>
+  <target>
+    <name>doc</name>
+    <description>undefined</description>
+  </target>
+  <softCounter>
+    <name>blackbeard</name>
+    <description>undefined</description>
+  </softCounter>
+  <softCounter>
+    <name>twitch</name>
+    <description>undefined</description>
+  </softCounter>
+  <softCounter>
+    <name>finka</name>
+    <description>undefined</description>
+  </softCounter>
+</operators>

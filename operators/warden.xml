@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operators>
+  <target>
+    <name>warden</name>
+    <description>undefined</description>
+  </target>
+  <hardCounter>
+    <name>glaz</name>
+    <description>undefined</description>
+  </hardCounter>
+  <hardCounter>
+    <name>iq</name>
+    <description>undefined</description>
+  </hardCounter>
+  <softCounter>
+    <name>thatcher</name>
+    <description>undefined</description>
+  </softCounter>
+  <softCounter>
+    <name>zofia</name>
+    <description>undefined</description>
+  </softCounter>
+</operators>

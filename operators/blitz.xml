@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operators>
+  <target>
+    <name>blitz</name>
+    <description>undefined</description>
+  </target>
+  <hardCounter>
+    <name>warden</name>
+    <description>undefined</description>
+  </hardCounter>
+  <hardCounter>
+    <name>smoke</name>
+    <description>undefined</description>
+  </hardCounter>
+  <hardCounter>
+    <name>ela</name>
+    <description>undefined</description>
+  </hardCounter>
+  <hardCounter>
+    <name>lesion</name>
+    <description>undefined</description>
+  </hardCounter>
+  <softCounter>
+    <name>mute</name>
+    <description>undefined</description>
+  </softCounter>
+</operators>

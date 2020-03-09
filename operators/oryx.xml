@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operators>
+  <target>
+    <name>oryx</name>
+    <description>undefined</description>
+  </target>
+  <hardCounter>
+    <name>undefined</name>
+    <description>undefined</description>
+  </hardCounter>
+  <softCounter>
+    <name>undefined</name>
+    <description>undefined</description>
+  </softCounter>
+</operators>

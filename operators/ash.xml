@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operators>
+  <target>
+    <name>ash</name>
+    <description>undefined</description>
+  </target>
+  <hardCounter>
+    <name>jager</name>
+    <description>undefined</description>
+  </hardCounter>
+  <hardCounter>
+    <name>wamai</name>
+    <description>undefined</description>
+  </hardCounter>
+  <softCounter>
+    <name>warden</name>
+    <description>undefined</description>
+  </softCounter>
+</operators>
