@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operators>
+  <target>
+    <name>mute</name>
+    <description>undefined</description>
+  </target>
+  <hardCounter>
+    <name>thatcher</name>
+    <description>Thatcher can destroy Mute's jammers with his EMPs</description>
+  </hardCounter>
+  <hardCounter>
+    <name>twitch</name>
+    <description>Twitch's drone can easily destroy Mute's jammers</description>
+  </hardCounter>
+  <softCounter>
+    <name>buck</name>
+    <description>Buck Skeleton's Key can give him angles on Mute jammers</description>
+  </softCounter>
+  <softCounter>
+    <name>sledge</name>
+    <description>Sledge hammer can grant him angles on Mute jammers in order to destroy them</description>
+  </softCounter>
+  <softcounter>
+    <name>finka</name>
+    <description>undefined</description>
+  </softCounter>
+  <softCounter>
+    <name>iq</name>
+    <description>undefined</description>
+  </softCounter>
+  <softCounter>
+    <name>montagne</name>
+    <description>undefined</description>
+  </softCounter>
+  <softCounter>
+    <name>zofia</name>
+    <description>undefined</description>
+  </softCounter>
+</operators>
