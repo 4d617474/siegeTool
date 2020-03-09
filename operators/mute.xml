@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <operators>
   <target>
-    <name>Mute</name>
+    <name>mute</name>
     <description>undefined</description>
   </target>
   <hardCounter>
-    <name>Thatcher</name>
+    <name>thatcher</name>
     <description>Thatcher can destroy Mute's jammers with his EMPs</description>
   </hardCounter>
   <hardCounter>
-    <name>Twitch</name>
+    <name>twitch</name>
     <description>Twitch's drone can easily destroy Mute's jammers</description>
   </hardCounter>
   <softCounter>
-    <name>Buck</name>
+    <name>buck</name>
     <description>Buck Skeleton's Key can give him angles on Mute jammers</description>
   </softCounter>
   <softCounter>
-    <name>Sledge</name>
+    <name>sledge</name>
     <description>Sledge hammer can grant him angles on Mute jammers in order to destroy them</description>
   </softCounter>
-  <softCounter>
+  <softcounter>
     <name>finka</name>
     <description>undefined</description>
   </softCounter>
