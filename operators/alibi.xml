@@ -6,19 +6,19 @@
   </target>
   <hardCounter>
     <name>iq</name>
-    <description>undefined</description>
+    <description>IQ can spot Alibi's Prismas</description>
   </hardCounter>
   <hardCounter>
     <name>thatcher</name>
-    <description>undefined</description>
+    <description>Thatcher can destroy Alibi's Prismas</description>
   </hardCounter>
   <hardCounter>
     <name>twitch</name>
-    <description>undefined</description>
+    <description>Thatcher can destroy Alibi's Prismas</description>
   </hardCounter>
   <hardCounter>
     <name>nokk</name>
-    <description>undefined</description>
+    <description>Nøkk does not trigger Alibi's Prismas</description>
   </hardCounter>
   <softCounter>
     <name>fuze</name>

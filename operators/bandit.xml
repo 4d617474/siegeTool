@@ -6,15 +6,15 @@
   </target>
   <hardCounter>
     <name>maverick</name>
-    <description>undefined</description>
+    <description>Maverick can use his Breaching Torch to spot and destroy Bandit's gadget as well as preventing Bandit-Tricking</description>
   </hardCounter>
   <hardCounter>
     <name>thatcher</name>
-    <description>undefined</description>
+    <description>Thatcher's EMP can destroy Bandit's Shock Wires</description>
   </hardCounter>
   <hardCounter>
     <name>twitch</name>
-    <description>undefined</description>
+    <description>Twitch's Drone can spot and destroy Bandit's Shock Wires</description>
   </hardCounter>
   <softCounter>
     <name>buck</name>

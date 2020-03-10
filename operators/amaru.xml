@@ -5,11 +5,23 @@
     <description>undefined</description>
   </target>
   <hardCounter>
-    <name>undefined</name>
-    <description>undefined</description>
+    <name>frost</name>
+    <description>Frost's traps layed near hatches or windows can be very effective on Amamru</description>
+  </hardCounter>
+  <hardCounter>
+    <name>castle</name>
+    <description>Amaru cannot grapple through Castle reinforced panels</description>
   </hardCounter>
   <softCounter>
-    <name>undefined</name>
-    <description>undefined</description>
+    <name>ela</name>
+    <description>Ela's Grzmot Mines placed near windows or hatches can be effective on Amamru</description>
+  </softCounter>
+  <softCounter>
+    <name>kapkan</name>
+    <description>Kapkan traps placed on windows can be effective on Amamru</description>
+  </softCounter>
+  <softCounter>
+    <name>lesion</name>
+    <description>Lesion's Gu Mines placed near windows or hatches can be effective on Amamru</description>
   </softCounter>
 </operators>

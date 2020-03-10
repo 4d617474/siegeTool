@@ -6,11 +6,11 @@
   </target>
   <hardCounter>
     <name>jager</name>
-    <description>undefined</description>
+    <description>Jäger ADS can intercept Ash's Breaching Rounds</description>
   </hardCounter>
   <hardCounter>
     <name>wamai</name>
-    <description>undefined</description>
+    <description>Wamai's Mag-NET can catch Ash's Breaching Rounds</description>
   </hardCounter>
   <softCounter>
     <name>warden</name>
